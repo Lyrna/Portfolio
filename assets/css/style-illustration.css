@@ -1,0 +1,11 @@
+@import 'style-pages.css';
+
+/*section page "code"*/
+
+.container:first-child{
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
+}
+
+.container:nth-child(2){
+	background: linear-gradient(-35deg, #7126CB, #FF67B3);
+}

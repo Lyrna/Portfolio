@@ -135,7 +135,7 @@ h2:first-child{
 	justify-content: space-around;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: linear-gradient(-35deg, #5864B4, #4DCDC2 );
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
 	color: white;
 }
 
@@ -225,7 +225,18 @@ div.right-section{
 i.favicon-cards{
 	font-size: 2em;
 	margin: 30px 0;
-	color: #5073D0;
+}
+
+.fav-1{
+	color: #238AEA;
+}
+
+.fav-2{
+	color: #E750E0;
+}
+
+.fav-3{
+	color: #EE5793;
 }
 
 .card button{

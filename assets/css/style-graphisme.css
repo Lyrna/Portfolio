@@ -1,0 +1,219 @@
+@import 'style-pages.css';
+
+.container:first-child{
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
+}
+
+.container:nth-child(2){
+	background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
+}
+
+.big-container h2{
+	text-align: left;
+	color: #383F56;
+	margin: 20px;
+	padding-top: 20px;
+	font-size: 1.6em;
+	letter-spacing: 2px;
+}
+
+.container-grid{
+	display: grid;
+	grid-template-columns: repeat(1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 20px 0;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+				inset 0 0 5px rgba(0, 0, 0, 0.05),
+				inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+				inset -5px -5px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 15px;
+	background: #efefef;
+}
+
+.inner-box{
+	width: 275px;
+	height: 275px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+.inner-box-title{
+	width: 275px;
+	height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+/*projet 1*/
+.box:nth-child(n+1) .graphisme-p1-1{	background: url(../img/visuels/graphisme/graphisme-cocoon-logo.png);}
+.box:nth-child(n+2) .graphisme-p1-2{	background: url(../img/visuels/graphisme/graphisme-cocoon-visite.jpg);}
+.box:nth-child(n+3) .graphisme-p1-3{	background: url(../img/visuels/graphisme/graphisme-cocoon-flyer.jpg);}
+.box:nth-child(n+4) .graphisme-p1-4{	background: url(../img/visuels/graphisme/graphisme-cocoon-cadeau.jpg);}
+
+
+/*projet 2*/
+.big-container:nth-child(4) .graphisme-p2-1{	background: url(../img/visuels/graphisme/graphisme-naturelle-logo.png);}
+.big-container:nth-child(4) .graphisme-p2-2{	background: url(../img/visuels/graphisme/graphisme-naturelle-logo2.jpg);}
+.big-container:nth-child(4) .graphisme-p2-3{	background: url(../img/visuels/graphisme/graphisme-naturelle-flyer.jpg);}
+
+/*projet 3*/
+.big-container:nth-child(5) .graphisme-p3-1{	background: url(../img/visuels/graphisme/graphisme-effetongle-flyer.jpg);}
+.big-container:nth-child(5) .graphisme-p3-2{	background: url(../img/visuels/graphisme/graphisme-effetongle-visite.jpg);}
+.big-container:nth-child(5) .graphisme-p3-3{	background: url(../img/visuels/graphisme/graphisme-effetongle-cadeau.jpg);}
+
+/*projet 4*/
+.big-container:nth-child(6) .graphisme-p4-1{	background: url(../img/visuels/graphisme/graphisme-rituel-visite.jpg);}
+.big-container:nth-child(6) .graphisme-p4-2{	background: url(../img/visuels/graphisme/graphisme-rituel-flyer.jpg);}
+.big-container:nth-child(6) .graphisme-p4-3{	background: url(../img/visuels/graphisme/graphisme-rituel-cadeau.jpg);}
+
+/*projet 5*/
+.big-container:nth-child(7) .graphisme-p5-1{	background: url(../img/visuels/graphisme/graphisme-aza-visite.jpg);}
+.big-container:nth-child(7) .graphisme-p5-2{	background: url(../img/visuels/graphisme/graphisme-aza-flyer.jpg);}
+.big-container:nth-child(7) .graphisme-p5-3{	background: url(../img/visuels/graphisme/graphisme-aza-cadeau.jpg);}
+
+
+.box:nth-child(n) .inner-box{
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+span.numero-projet{
+	font-size: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #A9B3CB;
+	border-bottom: 1px solid #D3D7E2;
+	display: block;
+	font-family: 'Roboto';
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.inner-box:hover .content{
+	opacity: 1;
+}
+
+.box-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 70%;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), 
+				inset 0 0 5px rgba(0, 0, 0, 0.3),
+				inset 5px 5px 5px rgba(0, 0, 0, 0.2), 
+				inset -5px -5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	background: transparent;
+}
+
+.box-inner-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 80%;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+	border-radius: 15px;
+	background: #f6f6f6FA;
+	padding: 20px;
+	text-align: center;
+	background: linear-gradient(-35deg, #271F55EF, #151033EF);
+}
+
+
+@media(min-width: 700px){
+	.container-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.inner-box-title{
+		width: 275px;
+		height: 275px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 15px;
+	}
+}
+
+@media(min-width: 1070px){
+	.box{
+		width: 280px;
+		height: 280px;		
+	}
+
+	.inner-box{
+		width: 275px;
+		height: 275px;	
+	}
+}
+
+@media(min-width: 1200px){
+	.container-grid{
+		grid-template-columns: repeat(4, 1fr);
+	}	
+}
+
+@media(max-width: 1070px){
+	.box-content{
+		height: 88%;
+	}
+
+	.box-inner-content{
+		height: 90%;
+	}
+}
+
+@media(max-width: 350px){
+	.box{
+		width: 260px;
+		height: 260px;		
+	}
+
+	.inner-box{
+		width: 230px;
+		height: 230px;	
+	}
+
+	h3{
+		font-size: 1em;
+	}
+
+	h4{
+		font-size: 0.7em;
+	}
+}

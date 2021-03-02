@@ -1,0 +1,193 @@
+@import 'style-pages.css';
+
+/*section page "code"*/
+
+.container:first-child{
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
+}
+
+.container:nth-child(2){
+	background: linear-gradient(-35deg, #7126CB,  #5CD3DB);
+}
+
+.container-grid{
+	display: grid;
+	grid-template-columns: repeat(1fr);
+	grid-gap: 40px;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 40px 0;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 330px;
+	height: 200px;
+	
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+				inset 0 0 5px rgba(0, 0, 0, 0.05),
+				inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+				inset -5px -5px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 15px;
+	background: #efefef;
+}
+
+.inner-box{
+	width: 300px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+/*page code*/
+.box:nth-child(n+1) .code-p1{	background: url(../img/visuels/code/cv.png);}
+.box:nth-child(n+2) .code-p2{	background: url(../img/visuels/code/espaceSecurise.png);}
+.box:nth-child(n+3) .code-p3{	background: url(../img/visuels/code/escargot.png);}
+.box:nth-child(n+4) .code-p4{	background: url(../img/visuels/code/komenkonfe.png);}
+.box:nth-child(n+5) .code-p5{	background: url(../img/visuels/code/escales.png);}
+.box:nth-child(n+6) .code-p6{	background: url(../img/visuels/code/javascript.png);}
+.box:nth-child(n+7) .code-p7{	background: url(../img/visuels/code/panierFrais.png);}
+.box:nth-child(n+8) .code-p8{	background: url(../img/visuels/code/piccolino.png);}
+.box:nth-child(n+9) .code-p9{ background: url(../img/visuels/code/quote.png);}
+.box:nth-child(n+10) .code-p10{ background: url(../img/visuels/code/leaflet.png);}
+.box:nth-child(n+11) .code-p11{ background: url(../img/visuels/code/cms.png);}
+.box:nth-child(n+12) .code-p12{ background: url(../img/visuels/code/phpexo.png);}
+.box:nth-child(n+13) .code-p13{ background: url(../img/visuels/code/atable.png);}
+.box:nth-child(n+14) .code-p14{ background: url(../img/visuels/code/cartes.png);}
+
+
+.box:nth-child(n) .inner-box{
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.inner-box:hover .content{
+	opacity: 1;
+}
+
+.box-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 85%;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), 
+				inset 0 0 5px rgba(0, 0, 0, 0.3),
+				inset 5px 5px 5px rgba(0, 0, 0, 0.2), 
+				inset -5px -5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	background: transparent;
+}
+
+.box-inner-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 80%;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+	border-radius: 15px;
+	background: #f6f6f6FA;
+	padding: 20px;
+	text-align: center;
+	background: linear-gradient(-35deg, #513AD8,  #47C2E0);
+}
+
+@media(min-width: 700px){
+	.container-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}	
+}
+
+@media(min-width: 1070px){
+	.box{
+		width: 500px;
+		height: 290px;		
+	}
+
+	.inner-box{
+		width: 490px;
+		height: 280px;	
+	}
+}
+
+@media(min-width: 1600px){
+	.container-grid{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media(max-width: 1070px){
+	.box-content{
+		height: 88%;
+	}
+
+	.box-inner-content{
+		height: 90%;
+	}
+}
+
+@media(max-width: 350px){
+	.box{
+		width: 260px;
+		height: 200px;		
+	}
+
+	.inner-box{
+		width: 230px;
+		height: 170px;	
+	}
+
+	h3{
+		font-size: 1em;
+	}
+
+	h4{
+		font-size: 0.7em;
+	}
+}
+
+/*Buttons tries*/
+
+div#buttons{
+	padding: 20px 80px;
+	padding-bottom: 0;
+	margin: 20px 0;
+	margin-top: 70px;
+	text-align: center;
+}
+#js, #all, #php, #html,#css, #bootstrap, #sql{
+	display: inline-block;
+	margin: 2px;
+	background:#3D41A4;
+	color: white;
+	padding: 10px 30px;
+	width: 140px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#js:hover, #all:hover{
+	cursor: pointer;
+}
+
