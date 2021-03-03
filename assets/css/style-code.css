@@ -3,17 +3,22 @@
 /*section page "code"*/
 
 .container:first-child{
-	background: linear-gradient(-35deg, #221F83, #8449C2 );
+	background: linear-gradient(-35deg, #6927B0, #B167EE);
 }
 
 .container:nth-child(2){
-	background: linear-gradient(-35deg, #7126CB,  #5CD3DB);
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
+}
+
+.container:nth-child(3){
+	margin-top: 40px;
+	padding: 0;
 }
 
 .container-grid{
 	display: grid;
 	grid-template-columns: repeat(1fr);
-	grid-gap: 40px;
+	grid-gap: 20px;
 	grid-auto-rows: minmax(100px, auto);
 	margin: 40px 0;
 }
@@ -46,19 +51,20 @@
 
 /*page code*/
 .box:nth-child(n+1) .code-p1{	background: url(../img/visuels/code/cv.png);}
-.box:nth-child(n+2) .code-p2{	background: url(../img/visuels/code/espaceSecurise.png);}
-.box:nth-child(n+3) .code-p3{	background: url(../img/visuels/code/escargot.png);}
+.box:nth-child(n+2) .code-p2{	background: url(../img/visuels/code/espacesecurise.jpg);}
+.box:nth-child(n+3) .code-p3{	background: url(../img/visuels/code/escargot.jpg);}
 .box:nth-child(n+4) .code-p4{	background: url(../img/visuels/code/komenkonfe.png);}
-.box:nth-child(n+5) .code-p5{	background: url(../img/visuels/code/escales.png);}
-.box:nth-child(n+6) .code-p6{	background: url(../img/visuels/code/javascript.png);}
-.box:nth-child(n+7) .code-p7{	background: url(../img/visuels/code/panierFrais.png);}
-.box:nth-child(n+8) .code-p8{	background: url(../img/visuels/code/piccolino.png);}
-.box:nth-child(n+9) .code-p9{ background: url(../img/visuels/code/quote.png);}
-.box:nth-child(n+10) .code-p10{ background: url(../img/visuels/code/leaflet.png);}
-.box:nth-child(n+11) .code-p11{ background: url(../img/visuels/code/cms.png);}
-.box:nth-child(n+12) .code-p12{ background: url(../img/visuels/code/phpexo.png);}
-.box:nth-child(n+13) .code-p13{ background: url(../img/visuels/code/atable.png);}
-.box:nth-child(n+14) .code-p14{ background: url(../img/visuels/code/cartes.png);}
+.box:nth-child(n+5) .code-p5{	background: url(../img/visuels/code/escales.jpg);}
+.box:nth-child(n+6) .code-p6{	background: url(../img/visuels/code/dom.jpg);}
+.box:nth-child(n+7) .code-p7{	background: url(../img/visuels/code/fruits.jpg);}
+.box:nth-child(n+8) .code-p8{	background: url(../img/visuels/code/piccolino.jpg);}
+.box:nth-child(n+9) .code-p9{ background: url(../img/visuels/code/quote.jpg);}
+.box:nth-child(n+10) .code-p10{ background: url(../img/visuels/code/leaflet.jpg);}
+.box:nth-child(n+11) .code-p11{ background: url(../img/visuels/code/pokemon.jpg);}
+.box:nth-child(n+12) .code-p12{ background: url(../img/visuels/code/montlhery.png);}
+.box:nth-child(n+12) .code-p13{ background: url(../img/visuels/code/phpexo.jpg);}
+.box:nth-child(n+13) .code-p14{ background: url(../img/visuels/code/table.jpg);}
+.box:nth-child(n+14) .code-p15{ background: url(../img/visuels/code/cartes.png);}
 
 
 .box:nth-child(n) .inner-box{
@@ -110,7 +116,7 @@
 	background: #f6f6f6FA;
 	padding: 20px;
 	text-align: center;
-	background: linear-gradient(-35deg, #513AD8,  #47C2E0);
+	background: linear-gradient(-35deg, #271F55EF, #151033EF);
 }
 
 @media(min-width: 700px){
@@ -121,20 +127,26 @@
 
 @media(min-width: 1070px){
 	.box{
-		width: 500px;
-		height: 290px;		
+		width: 400px;
+		height: 240px;		
 	}
 
 	.inner-box{
-		width: 490px;
-		height: 280px;	
+		width: 390px;
+		height: 230px;	
 	}
 }
 
-@media(min-width: 1600px){
+@media(min-width: 1260px){
 	.container-grid{
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+
+@media(min-width: 1920px){
+	.container-grid{
+		grid-template-columns: repeat(4, 1fr);
+	}	
 }
 
 @media(max-width: 1070px){
@@ -170,24 +182,64 @@
 /*Buttons tries*/
 
 div#buttons{
+	width: 820px;
 	padding: 20px 80px;
-	padding-bottom: 0;
-	margin: 20px 0;
-	margin-top: 70px;
+	margin: 20px 30px;
+	margin-top: 20px;
 	text-align: center;
+	background: url(../img/exemple.jpg);
+	background-size: 100%;
+	background-position: 50% 30%;
+	border-radius: 15px;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1), 
+				inset 0 0 5px rgba(0, 0, 0, 0.05),
+				inset 5px 5px 5px rgba(0, 0, 0, 0.1), 
+				inset -5px -5px 5px rgba(0, 0, 0, 0.05);
 }
-#js, #all, #php, #html,#css, #bootstrap, #sql{
+
+.tri{
 	display: inline-block;
-	margin: 2px;
-	background:#3D41A4;
-	color: white;
-	padding: 10px 30px;
-	width: 140px;
+	margin: 5px;
+	background:#fafafa;
+	color: #383F56;
+	box-shadow: 0 0 3px rgba(0,0,0,0.25);
+	padding: 10px 20px;
+	border-radius: 5px;
+	width: 120px;
 	cursor: pointer;
 	text-align: center;
+	transition: 0.7s;
 }
 
-#js:hover, #all:hover{
+.tri:hover{
+	transform: translateY(-5px);
 	cursor: pointer;
+	background:#fafafaDA;
+	dropback-filter: blur(5px);
+	transition: 0.3s;
 }
 
+.tri.active{
+	background: #3361DC;
+	color: white;
+}
+
+@media(min-width: 1500px){
+	div#buttons{
+		width: 1120px;
+	}
+}
+
+@media(max-width: 490px){
+	div#buttons{
+		width: 280px;
+		padding: 20px 0;
+		background-size: cover;
+		background-position: 50% 30%;
+	}
+
+	.tri{
+		padding: 10px 0;
+		width: 80%;
+	}
+}

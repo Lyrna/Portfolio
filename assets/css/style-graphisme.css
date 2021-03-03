@@ -1,11 +1,11 @@
 @import 'style-pages.css';
 
 .container:first-child{
-	background: linear-gradient(-35deg, #221F83, #8449C2 );
+	background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
 }
 
 .container:nth-child(2){
-	background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
 }
 
 .big-container h2{
@@ -106,6 +106,14 @@ span.numero-projet{
 	font-family: 'Roboto';
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+}
+
+.big-container p{
+	color: rgba(0,0,0,0.4);
+	text-transform: uppercase;
+	padding: 0 20px;
+	margin: 0 0 10px 0;
+	font-size: 0.8em;
 }
 
 .content{

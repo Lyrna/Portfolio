@@ -3,9 +3,187 @@
 /*section page "code"*/
 
 .container:first-child{
-	background: linear-gradient(-35deg, #221F83, #8449C2 );
+	background: linear-gradient(-35deg, #811DB9,  #51BDD5);
 }
 
 .container:nth-child(2){
-	background: linear-gradient(-35deg, #7126CB, #FF67B3);
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
+}
+
+.container:nth-child(3){
+	background: #efefef;
+	margin: 20px 60px;
+}
+
+.container-grid{
+	display: grid;
+	grid-template-columns: repeat(1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 20px 0;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+				inset 0 0 5px rgba(0, 0, 0, 0.05),
+				inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+				inset -5px -5px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 15px;
+	background: #efefef;
+	margin: 0;
+}
+
+.box:first-child{ height: 350px;}
+.box:first-child .inner-box{ height: 300px;}
+
+.box:nth-child(n+2){ height: 410px;}
+.box:nth-child(n+2) .inner-box{ height: 300px;}
+
+.box:nth-child(n+3){ height: 500px;}
+.box:nth-child(n+3) .inner-box{ height: 300px;}
+
+.box:nth-child(n+4){ height: 480px;}
+.box:nth-child(n+4) .inner-box{ height: 300px;}
+
+.box:nth-child(n+5){ height: 410px;}
+.box:nth-child(n+5) .inner-box{ height: 300px;}
+
+.box:nth-child(n+6){ height: 335px;}
+.box:nth-child(n+6) .inner-box{ height: 315px;}
+
+.box:nth-child(n+7){ height: 350px;}
+.box:nth-child(n+7) .inner-box{ height: 300px;}
+
+.box:nth-child(n+8){ height: 330px;}
+.box:nth-child(n+8) .inner-box{ height: 310px;}
+
+.box:nth-child(n+9){ height: 410px;}
+.box:nth-child(n+9) .inner-box{ height: 310px;}
+
+
+.inner-box{
+	width: 275px;
+	height: 275px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.inner-box:hover .content{
+	opacity: 1;
+}
+
+
+.box-inner-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+	border-radius: 15px 15px 0 0;
+	background: #f6f6f6FA;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(-35deg, #EBEBEBEF, #EFEFEFEF);
+}
+
+.box-inner-content h3, .box-inner-content h4{
+	color: #383F56;
+}
+.box-inner-content h3{
+	border-bottom: 1px solid #383F56;
+}
+
+.illustration{
+	width: 100%;
+	border-radius: 0 0 15px 15px;
+}
+
+@media(min-width: 670px){
+	.container-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.box:nth-child(n+3){ margin-top: -60px;}
+	.box:nth-child(n+4){ margin-top: 0;}
+	.box:nth-child(n+5){ margin-top: -40px;}
+	.box:nth-child(n+6){ margin-top: 0;}
+	.box:nth-child(n+7){ margin-top: 0;}
+	.box:nth-child(n+8){ margin-top: -35px;}
+	.box:nth-child(n+9){ margin-top: 0;}
+}
+
+
+@media(min-width: 970px){
+	.container-grid{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
+	.box:nth-child(n+3){ margin-top: 0;}
+	.box:nth-child(n+4){ margin-top: -150px;}
+	.box:nth-child(n+5){ margin-top: -90px;}
+	.box:nth-child(n+6){ margin-top: 0;}
+	.box:nth-child(n+7){ margin-top: -5px;}
+	.box:nth-child(n+8){ margin-top: -15px;}
+	.box:nth-child(n+9){ margin-top: 0;}
+}
+
+@media(min-width: 1280px){
+	.container-grid{
+		grid-template-columns: repeat(4, 1fr);
+	}	
+
+	.box{
+		width: 300px;
+		height: 500px;		
+	}
+
+	.inner-box{
+		width: 280px;
+		height: 490px;	
+	}	
+
+	.box:nth-child(n+4){ margin-top: 0;}
+	.box:nth-child(n+5){ margin-top: -150px;}
+	.box:nth-child(n+6){ margin-top: -90px;}
+	.box:nth-child(n+7){ margin-top: 0;}
+	.box:nth-child(n+8){ margin-top: -20px;}
+	.box:nth-child(n+9){ margin-top: -90px;}
+}
+
+@media(min-width: 1920px){
+
+	.container-grid{
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.box:nth-child(n+5){ margin-top: 0;}
+	.box:nth-child(n+6){ margin-top: -150px;}
+	.box:nth-child(n+7){ margin-top: -90px;}
+	.box:nth-child(n+8){ margin-top: 0;}
+	.box:nth-child(n+9){ margin-top: -20px;}
 }
