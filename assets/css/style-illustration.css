@@ -39,33 +39,6 @@
 	margin: 0;
 }
 
-.box:first-child{ height: 350px;}
-.box:first-child .inner-box{ height: 300px;}
-
-.box:nth-child(n+2){ height: 410px;}
-.box:nth-child(n+2) .inner-box{ height: 300px;}
-
-.box:nth-child(n+3){ height: 500px;}
-.box:nth-child(n+3) .inner-box{ height: 300px;}
-
-.box:nth-child(n+4){ height: 480px;}
-.box:nth-child(n+4) .inner-box{ height: 300px;}
-
-.box:nth-child(n+5){ height: 410px;}
-.box:nth-child(n+5) .inner-box{ height: 300px;}
-
-.box:nth-child(n+6){ height: 335px;}
-.box:nth-child(n+6) .inner-box{ height: 315px;}
-
-.box:nth-child(n+7){ height: 350px;}
-.box:nth-child(n+7) .inner-box{ height: 300px;}
-
-.box:nth-child(n+8){ height: 330px;}
-.box:nth-child(n+8) .inner-box{ height: 310px;}
-
-.box:nth-child(n+9){ height: 410px;}
-.box:nth-child(n+9) .inner-box{ height: 310px;}
-
 
 .inner-box{
 	width: 275px;
@@ -78,27 +51,42 @@
 	border-radius: 15px;
 }
 
-.content{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 15px;
-	background: rgba(0,0,0,0.4);
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transition: 0.3s;
-}
 
 .inner-box:hover .content{
 	opacity: 1;
 }
 
+.box:first-child{ height: 350px;}
+.box:first-child .box-inner-content{ height: 330px;}
+
+.box:nth-child(n+2){ height: 410px;}
+.box:nth-child(n+2) .inner-box{ height: 390px;}
+
+.box:nth-child(n+3){ height: 500px;}
+.box:nth-child(n+3) .inner-box{ height: 480px;}
+
+.box:nth-child(n+4){ height: 480px;}
+.box:nth-child(n+4) .inner-box{ height: 460px;}
+
+.box:nth-child(n+5){ height: 410px;}
+.box:nth-child(n+5) .inner-box{ height: 390px;}
+
+.box:nth-child(n+6){ height: 335px;}
+.box:nth-child(n+6) .inner-box{ height: 315px;}
+
+.box:nth-child(n+7){ height: 350px;}
+.box:nth-child(n+7) .inner-box{ height: 330px;}
+
+.box:nth-child(n+8){ height: 330px;}
+.box:nth-child(n+8) .inner-box{ height: 310px;}
+
+.box:nth-child(n+9){ height: 410px;}
+.box:nth-child(n+9) .inner-box{ height: 390px;}
 
 .box-inner-content{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 100%;
