@@ -41,9 +41,8 @@
 
 
 .inner-box{
-	width: 275px;
-	height: 275px;
 	display: flex;
+	width: 270px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -51,37 +50,36 @@
 	border-radius: 15px;
 }
 
-
 .inner-box:hover .content{
 	opacity: 1;
 }
 
 .box:first-child{ height: 350px;}
-.box:first-child .box-inner-content{ height: 330px;}
+.box:first-child .box-inner-content{ height: 115px;}
 
 .box:nth-child(n+2){ height: 410px;}
-.box:nth-child(n+2) .box-inner-content{ height: 390px;}
+.box:nth-child(n+2) .box-inner-content{ height: 115px;}
 
 .box:nth-child(n+3){ height: 500px;}
-.box:nth-child(n+3) .box-inner-content{ height: 480px;}
+.box:nth-child(n+3) .box-inner-content{ height: 115px;}
 
 .box:nth-child(n+4){ height: 480px;}
-.box:nth-child(n+4) .box-inner-content{ height: 460px;}
+.box:nth-child(n+4) .box-inner-content{ height: 115px;}
 
 .box:nth-child(n+5){ height: 410px;}
-.box:nth-child(n+5) .box-inner-content{ height: 390px;}
+.box:nth-child(n+5) .box-inner-content{ height: 115px;}
 
-.box:nth-child(n+6){ height: 335px;}
-.box:nth-child(n+6) .box-inner-content{ height: 315px;}
+.box:nth-child(n+6){ height: 305px;}
+.box:nth-child(n+6) .box-inner-content{ height: 115px;}
 
 .box:nth-child(n+7){ height: 350px;}
-.box:nth-child(n+7) .box-inner-content{ height: 330px;}
+.box:nth-child(n+7) .box-inner-content{ height: 115px;}
 
-.box:nth-child(n+8){ height: 330px;}
-.box:nth-child(n+8) .box-inner-content{ height: 310px;}
+.box:nth-child(n+8){ height: 310px;}
+.box:nth-child(n+8) .box-inner-content{ height: 115px;}
 
 .box:nth-child(n+9){ height: 410px;}
-.box:nth-child(n+9) .box-inner-content{ height: 390px;}
+.box:nth-child(n+9) .box-inner-content{ height: 115px;}
 
 .box-inner-content{
 	display: flex;
@@ -148,11 +146,6 @@
 		width: 300px;
 		height: 500px;		
 	}
-
-	.inner-box{
-		width: 280px;
-		height: 490px;	
-	}	
 
 	.box:nth-child(n+4){ margin-top: 0;}
 	.box:nth-child(n+5){ margin-top: -150px;}
