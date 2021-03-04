@@ -60,28 +60,28 @@
 .box:first-child .box-inner-content{ height: 330px;}
 
 .box:nth-child(n+2){ height: 410px;}
-.box:nth-child(n+2) .inner-box{ height: 390px;}
+.box:nth-child(n+2) .box-inner-content{ height: 390px;}
 
 .box:nth-child(n+3){ height: 500px;}
-.box:nth-child(n+3) .inner-box{ height: 480px;}
+.box:nth-child(n+3) .box-inner-content{ height: 480px;}
 
 .box:nth-child(n+4){ height: 480px;}
-.box:nth-child(n+4) .inner-box{ height: 460px;}
+.box:nth-child(n+4) .box-inner-content{ height: 460px;}
 
 .box:nth-child(n+5){ height: 410px;}
-.box:nth-child(n+5) .inner-box{ height: 390px;}
+.box:nth-child(n+5) .box-inner-content{ height: 390px;}
 
 .box:nth-child(n+6){ height: 335px;}
-.box:nth-child(n+6) .inner-box{ height: 315px;}
+.box:nth-child(n+6) .box-inner-content{ height: 315px;}
 
 .box:nth-child(n+7){ height: 350px;}
-.box:nth-child(n+7) .inner-box{ height: 330px;}
+.box:nth-child(n+7) .box-inner-content{ height: 330px;}
 
 .box:nth-child(n+8){ height: 330px;}
-.box:nth-child(n+8) .inner-box{ height: 310px;}
+.box:nth-child(n+8) .box-inner-content{ height: 310px;}
 
 .box:nth-child(n+9){ height: 410px;}
-.box:nth-child(n+9) .inner-box{ height: 390px;}
+.box:nth-child(n+9) .box-inner-content{ height: 390px;}
 
 .box-inner-content{
 	display: flex;
@@ -89,7 +89,6 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100%;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.4);
 	border-radius: 15px 15px 0 0;
 	background: #f6f6f6FA;
