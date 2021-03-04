@@ -5,12 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Code - Portfolio Lyrna</title>
 	<script src="https://kit.fontawesome.com/c70a4c5665.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="../assets/css/style-code.css">
 </head>
 <body>
 
 
-<div class="container">
+<div class="container-bs">
 	<a href="../index.html">
 	<div class="home-button-container">
 		<div class="buttons-nav">
@@ -25,7 +26,7 @@
 </div>
 
 
-<div class="container">
+<div class="container-bs">
 	<div class="left-section">
 		<h1>Portfolio</h1>
 		<p class="identite">Clarisse Hurion</p>
@@ -38,7 +39,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container-bs">
 	<div id="buttons">
 		<span class="active tri" data-filter="all">Voir tout</span>
 		<span class="tri" data-filter="html">HTML</span>
@@ -52,7 +53,10 @@
 
 <div class="big-container">
 	<div class="container-grid">
-		<div class="box html css">
+		<div class="box html css" data-toggle="modal" data-target="#p1">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p1">
 				<div class="content">
 					<div class="box-inner-content">
@@ -61,18 +65,81 @@
 					</div>
 				</div>
 			</div>
+			<!--modal-->
+			<div class="modal fade" id="p1">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°1</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>CV Numérique</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                      <p class="modalButton modalButtonCss">CSS</p>
+		                  		</div>
+		                  		<p>  Mon premier projet correspond à la création d'un CV en ligne responsive, qui présente mon identité, mes compétences, mon expérience professionnelle, mes acquis et mes hobbies favoris.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 1 - </em>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
+			<!--fin modale-->
 		</div>
-		<div class="box html css php">
+		
+		<div class="box html css php" data-toggle="modal" data-target="#p2">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p2">
 				<div class="content">
 					<div class="box-inner-content">
-						<h3>Projet 2</h3>
+						<h3>Projet 3</h3>
 						<h4>Formulaire de connexion</h4>
 					</div>
 				</div>
 			</div>
+			<!--modal-->
+			<div class="modal fade" id="p2">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°2</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Espace Sécurisé</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                      <p class="modalButton modalButtonCss">CSS</p>
+			                      <p class="modalButton modalButtonPhp">PHP</p>
+		                  		</div>
+		                  		<p>Le but de ce projet est de créer un formulaire qui permet de se login et se logout au site. Il a fallu créer une base de données, qui regroupe tous les noms d'utilisateurs et les mots de passe associés au compte. Le projet nécessitait ainsi de travailler du côté front-end (visuel du site) autant que du côté back-end (côté serveur).</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 2 - </em>
+	                   <a href="https://github.com/Lyrna/Projet3_Login-logout-website"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
+			<!--fin modale-->
 		</div>
-		<div class="box html css js">
+		<div class="box html css js" data-toggle="modal" data-target="#p3">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p3">
 				<div class="content">
 					<div class="box-inner-content">
@@ -81,8 +148,40 @@
 					</div>
 				</div>
 			</div>
+			<!--modal-->
+			<div class="modal fade" id="p3">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°3</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Jeu de l'escargot</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                      <p class="modalButton modalButtonCss">CSS</p>
+			                      <p class="modalButton modalButtonJs">JS</p>
+		                  		</div>
+		                  		<p>Il s'agit de reproduire le jeu de l'escargot en créant un plateau de jeu, des escargots et un système de déplacement des pions afin que les escargots puissent franchir la ligne d'arrivée, ce qui créé une alerte pop up qui indique l'escargot gagnant.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 3 - </em>
+	                    <a href="https://github.com/Lyrna/Jeu-de-l-escargot"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
+			<!--fin modale-->
 		</div>
-		<div class="box html css">
+		<div class="box html css" data-toggle="modal" data-target="#p4">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p4">
 				<div class="content">
 					<div class="box-inner-content">
@@ -91,8 +190,39 @@
 					</div>
 				</div>
 			</div>
+			<!--modal-->
+			<div class="modal fade" id="p4">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°4</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Reproductions visuelles</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                      <p class="modalButton modalButtonCss">CSS</p>
+		                  		</div>
+		                  		<p>En utilisant exclusivement du HTML et du CSS il a fallu reproduire les visuels présentés par le fichier PDF qui nous a été fourni. Sept visuels ont été à reproduire, avec des éléments très divers, visuels de fenêtre pop-up, de boutons, de carousel. Il a fallu fournir un travail de recherches pour réussir à trouver les fonts utilisées.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 4 - </em>
+	                    <a href="https://github.com/Lyrna/Komenkonfait1"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
+			<!--fin modale-->
 		</div>
-		<div class="box html css js">
+		<div class="box html css js" data-toggle="modal" data-target="#p5">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p5">
 				<div class="content">
 					<div class="box-inner-content">
@@ -101,8 +231,37 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p5">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°5</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Sitre vitrine agence de voyages</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                      <p class="modalButton modalButtonCss">CSS</p>
+			                      <p class="modalButton modalButtonJs">JS</p>
+		                  		</div>
+		                  		<p>La conception d'un site vitrine sur les voyages s'est faite en groupe. Il a fallu créer un cahier des charges, une maquette wireframe puis celle mockup avant de commencer à coder. Le carousel défilant automatiquement montre toutes les destinations proposées par le site. Nous avons rajouté des onglets "qui sommes-nous ?", "promotions" et "contact" afin d'étayer le site. Les carrés en page accueil nous montre également la totalité des destinations que nous avons sélectionnées.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 5 - </em>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html js">
+		<div class="box html js" data-toggle="modal" data-target="#p6">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p6">
 				<div class="content">
 					<div class="box-inner-content">
@@ -111,8 +270,37 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p6">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°6</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Exercices Javascript</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                      <p class="modalButton modalButtonJs">JS</p>
+		                  		</div>
+		                  		<p>Des exercices divers nous ont été fournis afin de nous entraîner à repérer les éléments divers parents, enfants(...) qui constituent une page web pour les afficher dans la console et leur apporter quelques modifications par la suite. C'est une première approche du javascript et du DOM, qui serviront plus tard à rendre les pages web dynamiques.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 6 - </em>
+	                     <a href="https://github.com/Lyrna/DOM"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css js">
+		<div class="box html css js" data-toggle="modal" data-target="#p7">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p7">
 				<div class="content">
 					<div class="box-inner-content">
@@ -121,8 +309,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p7">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°7</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Mon Panier Frais</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                      <p class="modalButton modalButtonHtml">HTML</p>
+			                       <p class="modalButton modalButtonCss">CSS</p>
+			                      <p class="modalButton modalButtonJs">JS</p>
+		                  		</div>
+		                  		<p>La création de ce site nous permet de mettre en application les exercices précédents sur le DOM et le javascript. Il était question de mettre en page des catégories de produits (légumes, fruits, confitures et boissons), proposés par Lise et Paul LARGE puis de créer à l'aide de javascript une gestion d'affichage par catégorie. Les boutons associés à chaque catégorie devaient afficher seulement la catégorie correspondante. Ainsi, en appuyant sur le bouton "légumes", nous avions seulement les légumes affichés, ainsi de suite. J'ai préféré utilisé bootstrap sur ce projet pour organiser mes éléments en cartes.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 7 - </em>
+	                     <a href="https://github.com/Lyrna/monpanierfrais"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css js bootstrap">
+		<div class="box html css js bootstrap" data-toggle="modal" data-target="#p8">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p8">
 				<div class="content">
 					<div class="box-inner-content">
@@ -131,9 +349,40 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p8">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°8</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Piccolino</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonJs">JS</p>
+			                    	<p class="modalButton modalButtonBootstrap">Bootstrap</p>
+		                  		</div>
+		                  		<p>Le projet est basé sur de l'imitation. Il faut partir d'une maquette fournie au départ et construire le visuel du site au plus proche. Piccolino est un site de musique, qui présente les créateurs du site, un carousel, une map, un formulaire de contact, notamment. Il a fallu fournir une maquette wireframe avant de commencer à coder afin de discerner les différentes parties du site plus facilement. Le site a du être conçu en utilisant bootstrap.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 8 - </em>
+	                     <a href="https://github.com/Lyrna/Piccolino"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
 		<div class="box js">
-			<div class="inner-box code-p9">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
+			<div class="inner-box code-p9" data-toggle="modal" data-target="#p9">
 				<div class="content">
 					<div class="box-inner-content">
 						<h3>Projet 9</h3>
@@ -141,8 +390,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p9">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°9</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Random Quote Generator</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonJs">JS</p>
+		                  		</div>
+		                  		<p>Les codes HTML et CSS étaient fournis. Le but est de continuer à coder le javascript qui avait été commencé pour arriver à générer dans la fenêtre prévue à cet effet une citation et le nom de l'auteur qui lui est associé, de manière totalement aléatoire. En parallèle, la couleur du bouton, du fond de l'écran et de certaines écritures devaient changer également de manière aléatoires. Les couleurs et les citations ont été réparties dans des arrays pour arriver au résultat désiré.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 9 - </em>
+	                    <a href="https://github.com/Lyrna/welcode-ramdom-quote-generator"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css js bootstrap">
+		<div class="box html css js bootstrap" data-toggle="modal" data-target="#p10">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p10">
 				<div class="content">
 					<div class="box-inner-content">
@@ -151,8 +430,39 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p10">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°10</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Leaflet Map</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonJs">JS</p>
+			                    	<p class="modalButton modalButtonBootstrap">Boostrap</p>
+		                  		</div>
+		                  		<p>Dans ce projet, il nous a été demandé de créer une map avec Leaflet Map, le concurrent de GoogleMap, afin d'y afficher nos 5 lieux favoris placés sur Narbonne. Nous avons également dû proposé une météo en direct, ce qui nous a fait travailler pour la première fois avec une API. Dans le cadre de la formation, il nous a été demandé de reproduire un visuel se rapprochant de celui du site de Narbonne.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 10 - </em>
+	                     <a href="https://github.com/Lyrna/Leaflet_map"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css php">
+		<div class="box html css php" data-toggle="modal" data-target="#p11">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p11">
 				<div class="content">
 					<div class="box-inner-content">
@@ -161,8 +471,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p11">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°11</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Site e-commerce Wordpress</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonPhp">PHP</p>
+		                  		</div>
+		                  		<p>Le but du projet est de réaliser un site vitrine et e-commerce (présentant une collection de cartes Pokemon dans un premier temps, vendant les cartes possédées en doubles dans un second temps). La création d'un custom-post-type pour les "Doubles" est alors requise. La configuration du plugin woo-commerce a été réalisée mais les configurations de paiements n'ont pas eu à être réalisées.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 11 - </em>
+	                     <a href="http://pokemonstore.epizy.com/"><div class="github"><i class="fab fa-wordpress-simple"></i>Site</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css bootstrap js">
+		<div class="box html css bootstrap php js" data-toggle="modal" data-target="#p12">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p12">
 				<div class="content">
 					<div class="box-content">
@@ -173,8 +513,40 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p12">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°12</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Site vitre auto-école Montlhery</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                     	<p class="modalButton modalButtonJs">JS</p>
+			                    	<p class="modalButton modalButtonPhp">PHP</p>
+			                    	<p class="modalButton modalButtonBootstrap">BOOTSTRAP</p>
+		                  		</div>
+		                  		<p>Ce projet, réalisé pour l'auto-école de Montlhery basée sur Narbonne, propose une refonte graphique totale du site.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 12 - </em>
+	                     <a href="http://montlhery-narbonne.epizy.com/"><div class="github"><i class="fas fa-globe-europe"></i>Site</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css php js">
+		<div class="box html css php js" data-toggle="modal" data-target="#p13">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p13">
 				<div class="content">
 					<div class="box-inner-content">
@@ -183,8 +555,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p13">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°13</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Exercices PHP</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonPhp">PHP</p>
+		                  		</div>
+		                  		<p>Des exercices divers pour s'entraîner au langage PHP, avec introduction aux variables, aux fonctions, aux boucles et aux array (tableaux).</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 13 - </em>
+	                     <a href="https://github.com/Lyrna/PHP_exercices_Simplon"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css php sql">
+		<div class="box html css php sql" data-toggle="modal" data-target="#p14">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p14">
 				<div class="content">
 					<div class="box-content">
@@ -195,8 +597,39 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p14">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°14</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>SQL, requêtes préparées</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonPhp">PHP</p>
+			                    	<p class="modalButton modalButtonSql">SQL</p>
+		                  		</div>
+		                  		<p>TP : "A table". Un restaurateur veut avoir accès à des informations clients, à l'aide des flash des QRCode (situés sur les tables du restaurant). Création de la base de données dynamiquement, création des tables dynamiquement, création des valeurs avec PhpMyAdmin, connexion à la base de données avec la méthode PDO, requêtes préparées SQL pour récupérer les données nécessaires.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 14 - </em>
+	                    <a href="https://github.com/Lyrna/A_table"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
-		<div class="box html css php sql">
+		<div class="box html css php sql" data-toggle="modal" data-target="#p15">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+			  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+			</svg>
 			<div class="inner-box code-p15">
 				<div class="content">
 					<div class="box-inner-content">
@@ -205,9 +638,40 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="p15">
+				<div class="modal-dialog modal-lg">
+	                <div class="modal-content">
+	                	<div class="modal-header">
+	                    	<h3 class="modal-title">Projet n°15</h3>
+	                  	</div>
+	                  	<div class="modal-body">
+	                  		<div class="image">
+	                  		</div> 
+	                  		<div class="contenu">
+	                  			<h4>Connexion, inscription, espace CRUD</h4>
+	                     		<hr/>
+		                      	<div class="boutonLangage">
+			                    	<p class="modalButton modalButtonHtml">HTML</p>
+			                     	<p class="modalButton modalButtonCss">CSS</p>
+			                    	<p class="modalButton modalButtonPhp">PHP</p>
+			                    	<p class="modalButton modalButtonSql">SQL</p>
+		                  		</div>
+		                  		<p>Création d'un formulaire d'inscription, qui permet d'insérer les données saisies par l'utilisateur dans une base de données. Le mot de passe est sécurisé avec un hashage (cryptage). Création d'un formulaire de connexion sécurisé afin de filtrer les entrées sur le site en fonction des inscriptions entrées dans la base de données. Création d'un espace de réinitialisation de mot de passe. Création d'un espace CRUD permettant la création, la lecture, l'édition et la suppression des données.</p></div>                
+	                	</div>
+	                  	<div class="modal-footer">
+	                    <em>Projet 15 - </em>
+	                     <a href="https://github.com/Lyrna/JeuxDeCartes"><div class="github"><i class="fab fa-github"></i>Github</div></a>
+	                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
 		</div>
 	</div>
 </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

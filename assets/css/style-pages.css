@@ -31,6 +31,15 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+	color: transparent;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 h1{
 	font-family: 'Calistoga';
 	font-size: 1.8em;
@@ -79,7 +88,7 @@ h4{
 	width: 100%;
 }
 
-.container{
+.container, .container-bs{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -162,7 +171,7 @@ div.right-section{
 }
 
 /*section navigation*/
-.container:first-child{
+.container:first-child, .container-bs:first-child{
 	background-color: #EFEFEF;
 	justify-content: space-between;
 	align-items: center;
@@ -261,7 +270,7 @@ div.right-section{
 		font-size: 1.1em;
 	}
 
-	.container:first-child{
+	.container:first-child, .container-bs:first-child{
 		padding-top: 80px;
 		padding-bottom: 80px;
 	}
@@ -285,7 +294,7 @@ div.right-section{
 }
 
 @media(max-width: 670px){
-	.container:first-child{
+	.container:first-child, .container-bs:first-child{
 		justify-content: center;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -301,7 +310,7 @@ div.right-section{
 }
 
 @media(max-width: 474px){
-	.container:first-child{
+	.container:first-child, .container-bs:first-child{
 		padding-bottom: 20px;
 	}
 }
