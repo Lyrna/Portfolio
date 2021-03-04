@@ -39,8 +39,8 @@
 }
 
 .inner-box{
-	width: 300px;
-	height: 170px;
+	width: 320px;
+	height: 190px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -161,13 +161,13 @@
 
 @media(max-width: 350px){
 	.box{
-		width: 260px;
-		height: 200px;		
+		width: 270px;
+		height: 170px;		
 	}
 
 	.inner-box{
-		width: 230px;
-		height: 170px;	
+		width: 260px;
+		height: 160px;	
 	}
 
 	h3{
