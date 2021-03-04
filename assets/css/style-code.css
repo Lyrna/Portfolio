@@ -3,11 +3,11 @@
 /*section page "code"*/
 
 .container:first-child{
-	background: linear-gradient(-35deg, #6927B0, #B167EE);
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
 }
 
 .container:nth-child(2){
-	background: linear-gradient(-35deg, #221F83, #8449C2 );
+	background: linear-gradient(-35deg, #6927B0, #B167EE);
 }
 
 .container:nth-child(3){
@@ -122,7 +122,16 @@
 @media(min-width: 700px){
 	.container-grid{
 		grid-template-columns: repeat(2, 1fr);
-	}	
+	}
+
+	.container:first-child{
+		background: linear-gradient(-35deg, #6927B0, #B167EE);
+	}
+
+	.container:nth-child(2){
+		background: linear-gradient(-35deg, #221F83, #8449C2 );
+	}
+
 }
 
 @media(min-width: 1070px){

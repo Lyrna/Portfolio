@@ -1,11 +1,11 @@
 @import 'style-pages.css';
 
 .container:first-child{
-	background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
+	background: linear-gradient(-35deg, #221F83, #8449C2 );
 }
 
 .container:nth-child(2){
-	background: linear-gradient(-35deg, #221F83, #8449C2 );
+	background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
 }
 
 .big-container h2{
@@ -180,6 +180,14 @@ span.numero-projet{
 		justify-content: center;
 		align-items: center;
 		border-radius: 15px;
+	}
+
+	.container:first-child{
+		background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
+	}
+
+	.container:nth-child(2){
+		background: linear-gradient(-35deg, #221F83, #8449C2 );
 	}
 }
 
