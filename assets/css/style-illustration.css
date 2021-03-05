@@ -8,6 +8,7 @@
 
 .container:nth-child(2){
 	background: linear-gradient(-35deg, #811DB9,  #51BDD5);
+	background: linear-gradient(-35deg, #6927B0, #B167EE);
 }
 
 .container:nth-child(3){
@@ -80,6 +81,12 @@
 
 .box:nth-child(n+9){ height: 413px;}
 .box:nth-child(n+9) .box-inner-content{ height: 115px;}
+
+.box{
+	background: url(../img/exemple.jpg);
+	background-size: 300%;
+	background-position: 50%;
+}
 
 .box-inner-content{
 	display: flex;
