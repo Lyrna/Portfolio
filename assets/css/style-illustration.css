@@ -118,6 +118,7 @@
 
 	.container:first-child{
 		background: linear-gradient(-35deg, #811DB9,  #51BDD5);
+		background: linear-gradient(-35deg, #6927B0, #B167EE);
 	}
 
 	.container:nth-child(2){

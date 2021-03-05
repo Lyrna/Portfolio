@@ -185,6 +185,7 @@ span.numero-projet{
 
 	.container:first-child{
 		background: linear-gradient(-35deg, #4B2AB9, #EB52E6);
+		background: linear-gradient(-35deg, #6927B0, #B167EE);
 	}
 
 	.container:nth-child(2){
